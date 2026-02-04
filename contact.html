@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" id="html-root">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smile Care Dental Clinic | Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="top-bar-info">
+                    <span><i class="fas fa-phone"></i> +1 (234) 567-8900</span>
+                    <span><i class="fas fa-envelope"></i> info@smilecare.com</span>
+                    <span><i class="fas fa-clock"></i> Mon-Fri: 8:00 AM - 7:00 PM</span>
+                </div>
+                <div class="language-switcher">
+                    <button id="lang-en" class="lang-btn active">EN</button>
+                    <button id="lang-ar" class="lang-btn">AR</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-tooth"></i>
+                    <div class="logo-text">
+                        <h1>Smile Care</h1>
+                        <p data-i18n="header.tagline">Dental Clinic</p>
+                    </div>
+                </div>
+                
+                <nav class="navbar">
+                    <ul class="nav-links">
+                        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+                        <li><a href="about.html" data-i18n="nav.about">About Us</a></li>
+                        <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+                        <li><a href="contact.html" class="active" data-i18n="nav.contact">Contact</a></li>
+                        <li><a href="#" class="btn appointment-btn" data-i18n="nav.appointment">Book Appointment</a></li>
+                    </ul>
+                    <div class="mobile-menu-btn">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1 data-i18n="contact.pageTitle">Contact Us</h1>
+                <p data-i18n="contact.pageSubtitle">We're here to help with all your dental care needs</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h2 data-i18n="contact.getInTouch">Get in Touch</h2>
+                        <p data-i18n="contact.infoText">Have questions about our services or want to schedule an appointment? Reach out to us - we're happy to help!</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-detail">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h3 data-i18n="contact.visitClinic">Visit Our Clinic</h3>
+                                    <p data-i18n="contact.address">123 Health Street, Medical City, MC 12345</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-detail">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h3 data-i18n="contact.callUs">Call Us</h3>
+                                    <p>+1 (234) 567-8900</p>
+                                    <p class="emergency-note" data-i18n="contact.emergency">For dental emergencies, call our 24/7 hotline: +1 (234) 567-8911</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-detail">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h3 data-i18n="contact.emailUs">Email Us</h3>
+                                    <p>info@smilecare.com</p>
+                                    <p>appointments@smilecare.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-detail">
+                                <div class="contact-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h3 data-i18n="contact.officeHours">Office Hours</h3>
+                                    <p data-i18n="contact.hoursWeekdays">Monday - Friday: 8:00 AM - 7:00 PM</p>
+                                    <p data-i18n="contact.hoursSaturday">Saturday: 9:00 AM - 4:00 PM</p>
+                                    <p data-i18n="contact.hoursSunday">Sunday: Emergency Only</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-social">
+                            <h3 data-i18n="contact.followUs">Follow Us</h3>
+                            <div class="social-icons">
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-section">
+                        <h2 data-i18n="contact.sendMessage">Send Us a Message</h2>
+                        <form id="contactForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="contact-name" data-i18n="contact.name">Full Name *</label>
+                                    <input type="text" id="contact-name" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="contact-email" data-i18n="contact.email">Email Address *</label>
+                                    <input type="email" id="contact-email" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="contact-phone" data-i18n="contact.phone">Phone Number *</label>
+                                    <input type="tel" id="contact-phone" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="contact-subject" data-i18n="contact.subject">Subject *</label>
+                                    <select id="contact-subject" required>
+                                        <option value="" data-i18n="contact.selectSubject">Select a subject</option>
+                                        <option value="appointment" data-i18n="contact.subjectAppointment">Appointment Request</option>
+                                        <option value="emergency" data-i18n="contact.subjectEmergency">Dental Emergency</option>
+                                        <option value="billing" data-i18n="contact.subjectBilling">Billing Inquiry</option>
+                                        <option value="insurance" data-i18n="contact.subjectInsurance">Insurance Question</option>
+                                        <option value="other" data-i18n="contact.subjectOther">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="contact-message" data-i18n="contact.message">Message *</label>
+                                <textarea id="contact-message" rows="5" required data-i18n="contact.messagePlaceholder">Please include any specific concerns or preferred dates/times for appointments.</textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn primary-btn" data-i18n="contact.sendMessageBtn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="map-section">
+                    <h2 data-i18n="contact.findClinic">Find Our Clinic</h2>
+                    <div class="map-container">
+                        <div class="map-placeholder">
+                            <i class="fas fa-map-marked-alt"></i>
+                            <p data-i18n="contact.mapNote">Our clinic is conveniently located in Medical City with ample parking available.</p>
+                        </div>
+                        <div class="map-info">
+                            <h3 data-i18n="contact.directions">Directions</h3>
+                            <p data-i18n="contact.directionsText">From downtown: Take Health Avenue north for 2 miles, turn right on Medical Street, and we're on the left.</p>
+                            <h3 data-i18n="contact.parking">Parking</h3>
+                            <p data-i18n="contact.parkingText">Free patient parking is available in the lot behind our building. Handicap accessible spaces are located near the entrance.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-section">
+                    <h2 data-i18n="contact.faqTitle">Frequently Asked Questions</h2>
+                    <div class="faq-grid">
+                        <div class="faq-item">
+                            <h3 data-i18n="contact.faq1Question">How do I schedule an appointment?</h3>
+                            <p data-i18n="contact.faq1Answer">You can schedule an appointment by calling us at +1 (234) 567-8900, using our online booking form, or visiting our clinic during office hours.</p>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <h3 data-i18n="contact.faq2Question">Do you accept dental insurance?</h3>
+                            <p data-i18n="contact.faq2Answer">Yes, we accept most major dental insurance plans. Our staff will help you verify your benefits and understand your coverage.</p>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <h3 data-i18n="contact.faq3Question">What should I do in a dental emergency?</h3>
+                            <p data-i18n="contact.faq3Answer">For dental emergencies, call our 24/7 hotline at +1 (234) 567-8911. We provide emergency dental care for issues like severe toothache, broken teeth, or injuries.</p>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <h3 data-i18n="contact.faq4Question">What COVID-19 safety measures are in place?</h3>
+                            <p data-i18n="contact.faq4Answer">We follow strict infection control protocols including enhanced cleaning, air purification, mandatory masks, and social distancing in our waiting areas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <i class="fas fa-tooth"></i>
+                        <div>
+                            <h2>Smile Care</h2>
+                            <p data-i18n="footer.tagline">Dental Excellence</p>
+                        </div>
+                    </div>
+                    <p data-i18n="footer.aboutText">Providing exceptional dental care with compassion and advanced technology since 2010.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3 data-i18n="footer.quickLinks">Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+                        <li><a href="about.html" data-i18n="nav.about">About Us</a></li>
+                        <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+                        <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-services">
+                    <h3 data-i18n="footer.ourServices">Our Services</h3>
+                    <ul>
+                        <li><a href="services.html" data-i18n="footer.service1">Teeth Cleaning</a></li>
+                        <li><a href="services.html" data-i18n="footer.service2">Dental Implants</a></li>
+                        <li><a href="services.html" data-i18n="footer.service3">Teeth Whitening</a></li>
+                        <li><a href="services.html" data-i18n="footer.service4">Root Canal</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3 data-i18n="footer.contactUs">Contact Us</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> <span data-i18n="footer.address">123 Health Street, Medical City</span></p>
+                        <p><i class="fas fa-phone"></i> +1 (234) 567-8900</p>
+                        <p><i class="fas fa-envelope"></i> info@smilecare.com</p>
+                        <p><i class="fas fa-clock"></i> <span data-i18n="footer.hours">Mon-Fri: 8:00 AM - 7:00 PM</span></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Smile Care Dental Clinic. <span data-i18n="footer.rights">All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="appointment-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 data-i18n="modal.title">Book an Appointment</h2>
+            <form id="appointmentForm">
+                <div class="form-group">
+                    <label for="appointment-name" data-i18n="modal.name">Full Name</label>
+                    <input type="text" id="appointment-name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="appointment-phone" data-i18n="modal.phone">Phone Number</label>
+                    <input type="tel" id="appointment-phone" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="appointment-email" data-i18n="modal.email">Email Address</label>
+                    <input type="email" id="appointment-email">
+                </div>
+                
+                <div class="form-group">
+                    <label for="appointment-date" data-i18n="modal.date">Preferred Date</label>
+                    <input type="date" id="appointment-date" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="appointment-service" data-i18n="modal.service">Service Required</label>
+                    <select id="appointment-service">
+                        <option value="" data-i18n="modal.selectService">Select a service</option>
+                        <option value="cleaning" data-i18n="modal.service1">Teeth Cleaning</option>
+                        <option value="whitening" data-i18n="modal.service2">Teeth Whitening</option>
+                        <option value="implants" data-i18n="modal.service3">Dental Implants</option>
+                        <option value="checkup" data-i18n="modal.service4">General Checkup</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="appointment-message" data-i18n="modal.message">Additional Notes</label>
+                    <textarea id="appointment-message" rows="3"></textarea>
+                </div>
+                
+                <button type="submit" class="btn primary-btn" data-i18n="modal.submit">Book Appointment</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
